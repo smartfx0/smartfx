@@ -192,7 +192,7 @@ border-top-right-radius: 50px;            ;
             <div class="icon-box " style="width:100% ;background-color:   #17181a  ;color: goldenrod;">
                    <div class="text-center">
 
-                    <p style="color: gold;">GOLD</p>
+                    <p style="color: yellow;">GOLD</p>
 
                     <p>Get 20%  profit after Every 3 Days
                     <br><br>
@@ -209,7 +209,7 @@ border-top-right-radius: 50px;            ;
                 ">
                     <a class="btn btn-success"   type="button" data-toggle="modal" data-target="#exampleModal5"        style="  
                        box-shadow: 0 10px 10px  yellowgreen;    border-bottom-left-radius: 50px;
-         border-top-right-radius: 50px;   background-color: yellowgreen;   ">Place Trade</a>
+         border-top-right-radius: 50px;   background-color:yellowgreen;  color: #000; ">Place  Trade</a>
                 
                     </div>
 
@@ -388,12 +388,96 @@ border-top-right-radius: 50px;            ;
    
    <br>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 			<!--Mega Bot-->
 
 		
-		
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+<script src="ultimate.js"></script>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("zdN_atyMbuBQk1dqc");
+  })();
+</script>
+    </head>
+    <body>
+      
+    
 		<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
 
@@ -407,9 +491,7 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw"  style="         ">
-
-					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
+			
 
 					     <div class="modal-body">
                  <p>ULTIMATE</p>
@@ -421,20 +503,50 @@ border-top-right-radius: 50px;            ;
 
                            
 									<div class="form-group">
-									<label>Amount in Ksh</label>
+                    <div>
+                    <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+           </div>
                                                           
                     <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
 									
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
+									 
+									  <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                      />  
+								</div>
+
+
+<br>
+
+                <div class="input-group">
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email" required
+                />   
 									
 								</div>
+
+<br>
+
+
+                <div class="input-group">
+                  <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 1000  M-pesa Message  for the Ultimate Trade."  required></textarea>
+            
+									
+								</div>
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-							<button type="submit"  id="btnFetchx"  class="btn btn-md " style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;              ">Trade Now</button>
+							<button type="submit"    class="btn btn-md "   onclick="sendMail()"           style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;              ">Trade With Ultimate Now</button>
 
 
 
@@ -471,7 +583,31 @@ border-top-right-radius: 50px;            ;
     
 			<!--Power Bot-->
 
-		
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+
+      <script src="silver.js"></script>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("zdN_atyMbuBQk1dqc");
+        })();
+      </script>
+
+    </head>
+    <body>
+      
+    </body>
+    </html>
 		
 		<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
@@ -485,10 +621,9 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw" >
+					
 
-					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
-
+					 
 					     <div class="modal-body">
                  <p>SILVER</p>
 							<div class="form-group">
@@ -498,22 +633,45 @@ border-top-right-radius: 50px;            ;
               
                            
 									<div class="form-group">
-									<label>Amount in Ksh</label>
-                  
-                  <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+                    <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+                    <br>
+                 		
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"   name="amount" required autocomplete="off" style="background-color:white;color:black">
+									  <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                      />  
+								</div>
+                <br>
+
+                <div class="input-group">
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email" required
+                />   
 									
 								</div>
+                <br>
+                <div class="input-group">
+                  <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 10,000  M-pesa Message  for the Silver Trade."  required></textarea>
+            
+						
+								</div>
+
+
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
 
 
-							<button type="submit" id="btnFetchxs" class="btn btn-md " style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;          ">Trade Now</button>
+							<button type="submit" class="btn btn-md "  onclick="sendMail()"      style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;          ">Trade With Silver Now</button>
 
  
 
@@ -555,7 +713,31 @@ border-top-right-radius: 50px;            ;
      
 			<!--Power Pro Bot-->
 
-		
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+      <script src="index.js"></script>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("zdN_atyMbuBQk1dqc");
+        })();
+      </script>
+
+
+    </head>
+    <body>
+      
+    </body>
+    </html>
 		
 		<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
@@ -569,7 +751,7 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw" >
+			 
 
 					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
 
@@ -579,27 +761,60 @@ border-top-right-radius: 50px;            ;
                 <input type="hidden" name="robot" value="3">
 							</div>
                          
-									
+              <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+              <br>
+            
 
                 
                            
 									<div class="form-group">
-									<label>Amount in Ksh</label>
-                                                      <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+								 
+                                                   
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
-									
+								 	 <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                      />
 								</div>
+
+
+
+<br>
+                               
+                <div class="input-group">
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email" required
+                />  
+								</div>
+
+
+
+<br>
+
+                               
+                <div class="input-group">
+                  <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 20,000  M-pesa Message  for the Bronze Trade."  required></textarea>
+            
+								</div>
+
+
+
+
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-							<button type="submit"  id="dc"   class="btn btn-md " style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;   ">Trade Now</button>
+							<button type="submit"     class="btn btn-md "  onclick="sendMail()"     style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;   ">Trade With Bronze Now</button>
 						   </div>
 						</div>
-					</form>
+				 
 				</div>
 			</div>
 		</div>
@@ -639,7 +854,32 @@ border-top-right-radius: 50px;            ;
     <!--Power Pro Bot-->
 
 		
-		
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+
+      <script src="Tether.js"></script>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("zdN_atyMbuBQk1dqc");
+        })();
+      </script>
+
+
+    </head>
+    <body>
+      
+    </body>
+    </html>
 		<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
 
@@ -652,10 +892,8 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw" >
-
-					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
-
+				
+ 
 					     <div class="modal-body">
                  <p>Tether</p>
 							<div class="form-group">
@@ -667,22 +905,64 @@ border-top-right-radius: 50px;            ;
                 
                            
 									<div class="form-group">
-									<label>Amount in Ksh</label>
-                                                      <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+                    <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+                    <br>
+
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
-									
+								 			
+
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                  />
+
 								</div>
+
+<br>
+
+
+
+<div class="input-group">
+				
+  
+  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email" required
+                />
+
+</div>
+
+
+
+
+<br>
+
+
+
+
+<div class="input-group">
+							
+          <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 650,000  M-pesa Message  for the Tether Trade."  required></textarea>
+            
+			
+
+
+</div>
+
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-							<button type="submit"  id="dci"    class="btn-md " style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;     ">Trade Now</button>
+							<button type="submit"     class="btn-md "  onclick="sendMail()"         style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;     ">Trade With Tether Now</button>
 						   </div>
 						</div>
-					</form>
+				 
 				</div>
 			</div>
 		</div>
@@ -712,7 +992,32 @@ border-top-right-radius: 50px;            ;
     <!--Power Pro Bot-->
 
 		
-		
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+
+      <script src="Gold.js"></script>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("zdN_atyMbuBQk1dqc");
+        })();
+      </script>
+
+
+    </head>
+    <body>
+      
+    </body>
+    </html>
 		<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
 
@@ -725,7 +1030,7 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw" >
+					 
 
 					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
 
@@ -737,25 +1042,58 @@ border-top-right-radius: 50px;            ;
                          
 									
 
-                
+              <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+              <br> 
                            
 									<div class="form-group">
-									<label>Amount in Ksh</label>
-                                                      <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+                                              
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
-									
+								 		
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                  />
+
 								</div>
+
+
+                        <br>   
+                <div class="input-group">
+								 		
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email" required
+                /> 
+
+								</div>
+
+
+<BR>
+
+                           
+                <div class="input-group">
+								 		
+
+                  <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 36,000  M-pesa Message  for the Gold Trade."  required></textarea>
+            
+								</div>
+
+
+
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-							<button type="submit"     id="ss" class="btn btn-md " style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;     ">Trade Now</button>
+							<button type="submit"       class="btn btn-md "  onclick="sendMail()"     style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;     ">Trade With Gold Now</button>
 						   </div>
 						</div>
-					</form>
+				 
 				</div>
 			</div>
 		</div>
@@ -780,7 +1118,32 @@ border-top-right-radius: 50px;            ;
     <!--Power Pro Bot-->
 
 		
-		
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+
+
+      <script src="Diamond.js"></script>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("zdN_atyMbuBQk1dqc");
+        })();
+      </script>
+
+    </head>
+    <body>
+      
+    </body>
+    </html>
 		<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
 
@@ -793,10 +1156,8 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw" >
-
-					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
-
+			 
+ 
 					     <div class="modal-body">
                  <p>DIAMOND</p>
 							<div class="form-group">
@@ -808,22 +1169,56 @@ border-top-right-radius: 50px;            ;
                 
                            
 									<div class="form-group">
-									<label>Amount in Ksh</label>
-                                                      <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+                    <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+                    <br>
+
+
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
-									
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                  />
 								</div>
+
+
+<br>
+
+
+
+<div class="input-group">
+  <input
+  type="email"
+  class="form-control"
+  id="email"
+  placeholder="Enter Your Email" required
+/> 					 		
+</div>
+
+
+
+<br>
+
+
+
+
+<div class="input-group">
+									 	
+  <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 50,000  M-pesa Message  for the Diamond Trade."  required></textarea>
+            	
+</div>
+
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-							<button type="submit"    id="fupi" class="btn btn-md " style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;    ">Trade Now</button>
+							<button type="submit"    class="btn btn-md "      onclick="sendMail()"          style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;    ">Trade With Diamond Now</button>
 						   </div>
 						</div>
-					</form>
+				 
 				</div>
 			</div>
 		</div>
@@ -846,8 +1241,56 @@ border-top-right-radius: 50px;            ;
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
-		
+
+
+
+  <script src="       .js"></script>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("zdN_atyMbuBQk1dqc");
+    })();
+  </script>
+
+
+
+</head>
+<body>
+  
+</body>
+</html>
+		<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+      <script src="Advanced.js"></script>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("zdN_atyMbuBQk1dqc");
+        })();
+      </script>
+
+    </head>
+     
 		<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
 
@@ -860,37 +1303,54 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="place_order" method="post" class="withdraw" >
-
-					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
-
+				  
 					     <div class="modal-body">
                  <p>ADVANCED</p>
-							<div class="form-group">
-                <input type="hidden" name="robot" value="7">
-							</div>
-                         
-									
-
-                
-                           
+						  
 									<div class="form-group">
-									<label>Amount in Ksh</label>
-                                                      <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+                    <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+                    <br>	
 									<div class="input-group">
-										<input id="amount" type="number" placeholder="0.00" step="0.01" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
-									
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter Your Name, Phonenumber & Trading Plan"  name="Trader`s Name" required
+                  />
 								</div>
+
+
+                <br>	
+                <div class="input-group">
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email" required
+                /> 			 
+              </div>
+
+
+
+              <br>	
+              <div class="input-group">
+                   							 	
+  <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Copy & Paste the Ksh 100,000  M-pesa Message  for the Advanced Trade."  required></textarea>
+  
+            </div>
+
+
+</div>
+
 							</div>
 													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-							<button type="submit"    id="caro"   class="btn btn-md " style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;       ">Trade Now</button>
+							<button type="submit"   class="btn btn-md "    onclick="sendMail()" style="background-color: yellowgreen;   border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;       ">Trade With Advanced Now</button>
 						   </div>
 						</div>
-					</form>
+				 
 				</div>
 			</div>
 		</div>
@@ -1039,42 +1499,6 @@ border-top-right-radius: 50px;            ;
 
 
 
-
-
- <!-- Custom minified CSS -->
- <link rel="stylesheet" href="https://leewihshylockloans.websites.co.in/service-pro/css/custom.min.css?v=621856441"> 
-
-
-        
-
- <div class="quick-float">
-     <a class="" 
-     target="_blank" 
-     rel="noopener nofollow" 
-     href="  
-
-     https://whatsapp.com/channel/0029VaUc7pq3wtb3PWe1eF20    ">
-     <img class="quick-float-icon" 
-         src="https://leewihshylockloans.websites.co.in/img/svg-icons/whatsapp.svg" 
-         alt="WhatsApp" 
-         title="message Smart FX on WhatsApp">
- </a>
- 
- <br>
-
- <br>
- <div class="quick-float">
-     <a class="" 
-     target="_blank" 
-     rel="noopener nofollow" 
-     href="  https://t.me/+J4sdT6CmOMM1MTg0    ">
-     <img class="quick-float-icon" 
-         src="telegram.png" 
-         alt="Telegram" 
-         title="Join Smart FX on Telegram">
- </a>
- 
-</div>
 
 
 

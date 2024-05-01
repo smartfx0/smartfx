@@ -1,4 +1,93 @@
- 
+
+
+
+
+
+<script src="index.js"></script>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("zdN_atyMbuBQk1dqc");
+  })();
+</script>
+</head>
+<body>
+<div class="container border mt-3 bg-light">
+  <div class="row">
+    <div class="col-md-6 p-5 bg-primary text-white">
+      <h1>Hi there!</h1>
+      <h4>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
+      </h4>
+    </div>
+    <div class="col-md-6 border-left py-3">
+      <h1>Contact form</h1>
+      <div class="form-group">
+        <h5 for="name">Name</h5>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter Your Name"  name="Trader`s Name" required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <h5 for="message" >Phone Number</h5>
+        <input  type="number"   class="form-control" id="phonenumber" name="Trader`s Phone Number"  placeholder="Enter Your Phone Number" required />
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <h5 for="email">Email</h5>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter Your Email" required
+        />
+      </div>
+
+
+
+      <div class="form-group">
+        
+        <textarea class="form-control" id="message" rows="3" name=" Trader`s Message" placeholder=" Copy & Paste Your M-pesa Message Here"  required></textarea>
+      </div>
+      <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,7 +202,43 @@ border-top-right-radius: 50px;            ;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Code injected by live-server -->
-
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
 <br>
@@ -214,26 +339,7 @@ border-top-right-radius: 50px;            ;
 
 			<!--Mega Bot-->
 
-		<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-
-<script src="index.js"></script>
-
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-></script>
-<script type="text/javascript">
-  (function () {
-    emailjs.init("zdN_atyMbuBQk1dqc");
-  })();
-</script>
-    </head>
-    
+		
 		
 		<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			<div style="margin-top: 100px;"></div>
@@ -248,7 +354,7 @@ border-top-right-radius: 50px;            ;
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					
+					<form action="https://getform.io/f/nadoqxxb " method="post"  >
 
 				 	     <div class="modal-body">
                  <p></p>
@@ -258,65 +364,28 @@ border-top-right-radius: 50px;            ;
 								<input type="hidden" name="SmartFx`s Robot" value="1">
 							</div>
                             <strong class="modal-title method-name " id="exampleModalLabel">Withdraw</strong>
-                            <br>
-                           <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
-								  
-<br>
-
-                             
+                           <br>
                            <div class="form-group">
 							
+                            <input type="hidden" name="WITHDRAWAL REQUEST FROM SMARTFX`S TRADER" value="The admin should process the withdrawal upon verefications" >
                           
-                    <div class="form-group">
-                      <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Enter Your Name & Phone Number"  name="Trader`s Name" required
-                    />
+                    <div class="input-group">
+                        <input id="phone number" type="number" placeholder=" Enter Phone Number" step="Enter Phone Number" class="form-control form-control-lg"  name="SmartFX Trader`s Phone Number" required autocomplete="off" style="background-color:white;color:black">
+                    
                 </div>
 
- 
+<br>
 
-                <div class="form-group">
-                  <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Enter Your Email" required
-                />
+                <div class="input-group">
+                  <input id="amount" type="number" placeholder=" Enter Amount" step="Enter Amount" class="form-control form-control-lg"  name="Amount in Ksh" required autocomplete="off" style="background-color:white;color:black">
+              
           </div>
-
-
-
-
-
 							</div>
-
-
-
-
-                          <div class="form-group">
-        
-                            <textarea class="form-control" id="message" rows="1" name=" Trader`s Message" placeholder=" Fill in the word: 👉 Am Requesting Withdrawal of... Eg; 10.00Ksh"  required></textarea>
-                          </div>
-                
-
-
-
-
-
-
-
-
-
-
-
+													</div>
 						<div class="modal-footer " >
 							<div class="text-center">
-              
-							<button type="submit"   class="btn btn-md "  onclick="sendMail()"      style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;    "> Request Withdrawal</button>
+							<button type="submit"   class="btn btn-md " style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;              ">Withdraw</button>
 
 
               <script type="text/javascript"> 
@@ -338,7 +407,7 @@ border-top-right-radius: 50px;            ;
 
 						   </div>
 						</div>
-					
+					</form>
 				</div>
 			</div>
 
@@ -349,3 +418,34 @@ border-top-right-radius: 50px;            ;
       </main>
       </body>
       </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

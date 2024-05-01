@@ -26,6 +26,41 @@
 
 
 
+
+
+
+
+  
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">   
+
+</script>
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("zdN_atyMbuBQk1dqc");
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body style="background-color:    #17181a   ;">
@@ -103,37 +138,19 @@ border-top-right-radius: 50px;            ;
                     ">
                         <a class="btn btn-success"   type="button" data-toggle="modal" data-target="#exampleModal1"        style="  
                                border-bottom-left-radius: 50px;
-             border-top-right-radius: 50px;       background-color: yellowgreen;       ">Request Balance</a>
+             border-top-right-radius: 50px;       background-color: yellowgreen;       ">Check Balance</a>
                     
                         </div>
     
 
-                </section><!-- End Services Section -->
-
-    
-            </div>
-            
-            <br>
-            
-    
-	<div style="position: fixed; left: 0; bottom: 0; z-index: 999999; width: 100%;">
-		<div style="width: 100%; background-color: #000; overflow:hidden; box-sizing: border-box; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; padding:1px;padding: 0px; margin: 0px;">
-			<div style="height:40px;">
-				<iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=" width="100%" height="36" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
-				 </iframe>
-			</div>
-			</div>
-		</div>       
-
-            </div>
-            
 
 			<!--Mega Bot-->
 
-		
+		 
 		
 		<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-			<div style="margin-top: 100px;"></div>
+			
+      <div style="margin-top: 100px;"></div>
 
 			<div class="modal-dialog" role="document" >
 				<div class="modal-content modal-content-bg" style="background:       #07062b   ;border-radius:5px;border-radius:5px;color: yellowgreen;      border-bottom-left-radius: 50px;
@@ -141,66 +158,101 @@ border-top-right-radius: 50px;            ;
 					<div class="modal-header">
                         <label> <o style="color: whitesmoke;">Smart</o><i style="color: blue;">FX</i></label>
 					
-						<a href="invite friends.html" class="close" data-dismiss="modal" aria-label="Close">
+						<a  data-dismiss="modal" aria-label="Close" >
 							<span aria-hidden="true" style="color:black">&times;</span>
 						</a>
 					</div>
-					<form action="invite friends.html" method="post" class="withdraw"  style="         ">
+					
 
-					<input type="hidden" name="csrfmiddlewaretoken" value="7ojkgyY2fGgZvUdnU15L0Qi8AJHIssq7xzY04mY81RQobxFIOyOPQPgK2iAkp46p">
-
+				 <value type="hidden"  >
 					     <div class="modal-body">
                  <p></p>
 
-							<div class="form-group">
-							
-								<input type="hidden" name="robot" value="1">
-							</div>
-                            <strong class="modal-title method-name " id="exampleModalLabel">My Balance</strong>
-                           
-									<div class="form-group">
+							      <strong class="modal-title method-name " id="exampleModalLabel">My Balance</strong>
+                           <br>
+                           <i style="color: lime;">Please Enter Valid Details as in your M-pesa Number</i>
+								  <br>
+                           <div class="form-group">
 								
                                                           
-                    <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
-									
+                      <input id="amount" type="text"  name="currency" value="EUR/USD" required autocomplete="off" hidden>
+                    
+  
+                      <div class="input-group">
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter Your Name &  Phone Number"  name="Trader`s Name" required
+                      />  
+                      
+                  </div>
+  
+  <br>
 
-                    <div class="input-group">
-                      <input id="phone number" type="number" placeholder=" Enter Phone Number" step="Enter Phone Number" class="form-control form-control-lg"  name="amount" required autocomplete="off" style="background-color:white;color:black">
-                  
-              </div>
+
+
+
+                  <div class="input-group">
+                    <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Your Email" required
+                  />     
+                      
+                  </div>
+  
+                
+<br>
+
+
+
+                  <div class="input-group">
+                           
+                    <textarea class="form-control" id="message" rows="2" name=" Trader`s Message" placeholder=" Fill in the word: 👉 Am Requesting My Balance"  required></textarea>
+                        
+                  </div>
+
+
+
+
+
+
+                </div>
+                            </div>
+              <div class="modal-footer " >
+                <div class="text-center">
+                <button type="submit"  class="btn btn-md "  onclick="sendMail()"       style="background-color: yellowgreen;  
+                color: #000;      border-bottom-left-radius: 50px;
+              border-top-right-radius: 50px;          ">Request Balance</button>
+  
+ 
+                
+                 
+
+
+
+
+
+
+
+
+  
+
+
+
 
 
 							</div>
 													</div>
-						<div class="modal-footer " >
-							<div class="text-center">
-							<button type="submit"  id="btnFetchx"  class="btn btn-md " style="background-color: yellowgreen;    border-bottom-left-radius: 50px;
-              border-top-right-radius: 50px;              ">Check Balance</button>
-
-
-              <script type="text/javascript"> 
-                $(document).ready(function() {
-                  $(" #btnFetchx  ").click(function() {
-                  // disable button
-                  $(this).prop("disabled", false);
-                  // add spinner to button
-                  $(this).html(
-                  '<i class="fa fa-circle-o-notch fa-spin"></i>Your balance is 20.00 Ksh 💸'
-                  );
-                  });
-                  });
-              
-              </script>
-
-
-
+						<div> </div>
 
 						   </div>
 						</div>
-					</form>
+				
 				</div>
 			</div>
-
 
 
 
@@ -231,7 +283,7 @@ border-top-right-radius: 50px;            ;
 
 
 
-
+    <script src="check.js"></script>
 
 
 
